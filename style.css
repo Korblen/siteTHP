@@ -10,11 +10,12 @@ body{
     padding:0;
     margin:0;
 }
-.c-item{
+
+.c-itemax{
     height: 600px;
   }
   
-  .c-img{
+.c-img{
     height: 100%;
     object-fit: cover;
     filter: brightness(0.7)
