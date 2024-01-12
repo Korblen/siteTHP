@@ -42,3 +42,10 @@ video {
     display: block;
     margin: auto;
   }
+
+.hover-zoom:hover {
+    transform: scale(1.2); 
+}
+.hover-zoom {
+    transition: transform 0.3s ease-in-out;
+}
