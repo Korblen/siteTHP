@@ -14,104 +14,276 @@
   </head>
   <body>
     <!-- Debut projet Loïc-->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#fd7e14; min-height: 125px;" id="accueil">
-          <div class="container-fluid">
-              <img class="navbar-brand" src="Logochocolatine.png" style="width: 150px; height: 125px; object-fit: contain;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-      
-            <div class="collapse navbar-collapse" id="navbarsExample02">
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#QSN">Qui sommes nous</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Produit">Le Produit</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Valeurs">Nos Valeurs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-  </header>
+    
     <!-- Fin projet Loïc -->
     <!-- Debut projet Robena -->
-    <div id="carouselExample" class="carousel slide"data-bs-ride="carousel">
-        
-      <div class="carousel-inner">
-        
-        <div class="carousel-item active c-item">
-          <img src="https://philippeconticini.fr/cdn/shop/files/Pain_au_chocolat_XXL_1980x.png?v=1692700377" class="d-block w-100 c-img" alt="slide 1">
-        
-          <div class="carousel-caption top-0 mt-5 d-md-block">
-            <p class="mt-5 fs-3">Fait pour vous, avec Amour !</p>
-            <h1 class="display-1 fw-bolder">Notre Chocolatine AOP</h1>
-            
-            <button class="btn btn-warning mt-4">Nos points de vente</button>
-            <button class="btn btn-dark mt-4">Notre offre pour les pro </button>
+     <header>
+      <style>
+        /* Carousel styling */
+        #introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 100vh;
+        }
+    
+        .carousel-item:nth-child(1) {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+    
+        .carousel-item:nth-child(2) {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+    
+        .carousel-item:nth-child(3) {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+    
+        /* Height for devices larger than 576px */
+        @media (min-width: 992px) {
+          #introCarousel {
+            margin-top: -58.59px;
+          }
+        }
+    
+        .navbar .nav-link {
+          color: #fff !important;
+        }
+      </style>
+    
+      <!-- Navbar -->
+      <nav
+           class="navbar navbar-expand-lg navbar-dark d-none d-lg-block"
+           style="z-index: 2000"
+           >
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+             <img class="navbar-brand nav-link" src="Logochocolatine.png" style="width: 150px; height: 125px; object-fit: contain; position:absolute;" target="_blank">
+          </a>
+          <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#navbarExample02"
+                  aria-controls="navbarExample02"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample02">
+            <ul class="navbar-nav me-autoc mb-2 mb-lg-0" >
+              <li class="nav-item" style="margin-left:170px;">
+                <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Produit">Nos Produit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Valeurs">Nos Valeurs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#QSN">Qui sommes nous</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+    
+            <ul class="navbar-nav list-inline">
+              <!-- Icons -->
+              
+            </ul>
           </div>
-        
         </div>
-          
-    <div class="carousel-item c-item">
-    <img src="https://philippeconticini.fr/cdn/shop/files/ViennoieriesXXL5_1100x.jpg?v=1692700474" class="d-block w-100  c-img" alt="slide 2">
-  
-    <div class="carousel-caption top-0 mt-5 d-md-block">
-      <h1 class="mt-5 display-1 fw-bolder">Le meilleur du Sud-Ouest !</h1>
-      <p class="fs-4">Nous sélectionnons pour vous les meilleurs producteurs de la région, afin que notre chocolatine garde son goût unique et si célèbre depuis 3 générations</p>
-      
-      <button class="btn btn-warning mt-4">Nos points de vente</button>
-      <button class="btn btn-dark mt-4">Notre offre pour les pro </button>
-    </div>
-  
-  </div>
-  
-  
-  
-  <div class="carousel-item c-item">
-    <img src="https://philippeconticini.fr/cdn/shop/files/ViennoieriesXXL9_1100x.jpg?v=1692700474" class="d-block w-100  c-img" alt="slide 3">
-  
-    <div class="carousel-caption top-0 mt-5 d-md-block">
-      <p class="mt-5 fs-3">Le pain au chocolat, c'est pas bon !</p>
-      <h1 class="display-1 fw-bolder">La Chocolatine AOP c'est mieux !</h1>
-      
-      <button class="btn btn-warning mt-4">Nos points de vente</button>
-      <button class="btn btn-dark mt-4">Notre offre pour les pro </button>
-    </div>
-
-  </div>
-  
-
-</div>
-
-
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</button>
-
-
-
-
-
-
-
-</div>
+      </nav>
+      <nav class="navbar d-lg-none navbar-dark" style="background-color:#fd7e14; min-height: 125px;" id="accueil">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="Logochocolatine.png" style="width: 150px; height: 125px; object-fit: contain;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Produit">Nos Produit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Valeurs">Nos Valeurs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#QSN">Qui sommes nous</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+    
+      <!-- Carousel wrapper -->
+      <div
+           id="introCarousel"
+           class="carousel slide carousel-fade shadow-2-strong"
+           data-mdb-ride="carousel"
+           >
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li
+              data-mdb-target="#introCarousel"
+              data-mdb-slide-to="0"
+              class="active"
+              ></li>
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+        </ol>
+    
+        <!-- Inner -->
+        <div class="carousel-inner">
+          <!-- Single item -->
+          <div class="carousel-item active">
+            <video
+                   style="min-width: 100%; min-height: 100%"
+                   playsinline
+                   autoplay
+                   muted
+                   loop
+                   >
+              <source
+                      class="h-100 object-fit"
+                      src="videochoco.mp4"
+                      type="video/mp4"
+                      />
+            </video>
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+              <div
+                   class="d-flex justify-content-center align-items-center h-100"
+                   >
+                <div class="text-white text-center">
+                  <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
+                  <h5 class="mb-4">
+                    Best & free guide of responsive web design
+                  </h5>
+                  <a
+                     class="btn btn-outline-light btn-lg m-2"
+                     href="https://www.youtube.com/watch?v=c9B4TPnak1A"
+                     role="button"
+                     rel="nofollow"
+                     target="_blank"
+                     >Start tutorial</a
+                    >
+                  <a
+                     class="btn btn-outline-light btn-lg m-2"
+                     href="https://mdbootstrap.com/docs/standard/"
+                     target="_blank"
+                     role="button"
+                     >Download MDB UI KIT</a
+                    >
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Single item -->
+          <div class="carousel-item">
+            <video
+                   style="min-width: 100%; min-height: 100%"
+                   playsinline
+                   autoplay
+                   muted
+                   loop
+                   >
+              <source
+                      class="h-100"
+                      src="https://mdbootstrap.com/img/video/forest.mp4"
+                      type="video/mp4"
+                      />
+            </video>
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.3)">
+              <div
+                   class="d-flex justify-content-center align-items-center h-100"
+                   >
+                <div class="text-white text-center">
+                  <h2>You can place here any content</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+    <!-- Single item -->
+          <div class="carousel-item">
+            <video
+                   style="min-width: 100%; min-height: 100%"
+                   playsinline
+                   autoplay
+                   muted
+                   loop
+                   >
+              <source
+                      class="h-100"
+                      src="https://mdbootstrap.com/img/video/Tropical.mp4"
+                      type="video/mp4"
+                      />
+            </video>
+            <div
+                 class="mask"
+                 style="
+                        background: linear-gradient(
+                        45deg,
+                        rgba(29, 236, 197, 0.7),
+                        rgba(91, 14, 214, 0.7) 100%
+                        );
+                        "
+                 >
+              <div
+                   class="d-flex justify-content-center align-items-center h-100"
+                   >
+                <div class="text-white text-center">
+                  <h2>And cover it with any mask</h2>
+                  <a
+                     class="btn btn-outline-light btn-lg m-2"
+                     href="https://mdbootstrap.com/docs/standard/content-styles/masks/"
+                     target="_blank"
+                     role="button"
+                     >Learn about masks</a
+                    >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+           class="carousel-control-prev"
+           href="#introCarousel"
+           role="button"
+           data-mdb-slide="prev"
+           >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+           class="carousel-control-next"
+           href="#introCarousel"
+           role="button"
+           data-mdb-slide="next"
+           >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Carousel wrapper -->
+    </header>
   <!-- Fin projet robena -->
   <!-- Debut projet Bénédicte -->
   <h1 style="font-family: 'Dancing Script', cursive;" class="text-center my-5" id="Produit">Nos Produits</h1>
